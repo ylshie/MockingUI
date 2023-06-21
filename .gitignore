@@ -1,0 +1,8 @@
+
+.next/
+node_modules/
+public/sound/
+.DS_Store
+.DS_Store
+common/@record.js
+.DS_Store

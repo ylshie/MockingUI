@@ -1,0 +1,40 @@
+.optionpanel {
+    background: #F0F1F8;
+    box-shadow: 0px 2px 0px #C6CAD1;
+    border-radius: 43px;
+
+    height: 48px;
+    padding-bottom: 2px;
+    padding-left: 24px;
+    padding-right: 14px;
+
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+}
+
+.menu-item-has-children .dropdown-menu-toggle {
+    font-size: 30px;
+}
+
+.dropdown {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.action {
+    background: #ADADB2;
+    border-radius: 43px;
+    border: none;
+    outline: none;
+    height: 80%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}

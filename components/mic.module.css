@@ -1,0 +1,51 @@
+
+.main .icon {
+    width: 34px;
+}
+
+.icon {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none;    
+}
+.voice {
+    position: relative;
+    width: fit-content;
+}
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.speak {
+    color: aliceblue;
+    background: #ADADB2;
+    border-radius: 43px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 80%;
+    width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.record {
+    color: red;
+    background: #ADADB2;
+    border-radius: 43px;
+    border: none;
+    outline: none;
+    height: 80%;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}

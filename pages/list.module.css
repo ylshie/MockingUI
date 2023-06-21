@@ -1,0 +1,126 @@
+.frame0 {
+    position: relative;
+    width: 340px;
+    height: calc(100vh - 22px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.frame {
+    position: absolute;
+    width: 100%;  /* 340px; */
+    height: 100%;  /* calc(100% - 22px); */
+    left: 0px;
+    top: 0px;
+    /*margin-left: auto;
+    margin-right: auto;
+    left: auto;
+    right: auto;*/
+}
+.inner {
+    position: relative;
+    width: 340px;
+    height: 100%;  /* calc(100% - 22px); */
+    margin-left: auto;
+    margin-right: auto;
+}
+.frameN {
+    position: relative;
+    width: 340px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image {
+    width: 100%;
+    height: 650px;
+    overflow-x: hidden;
+}
+.imageX {
+    width: 100%;
+    object-fit: contain;
+}
+.btnmsg {
+    position: absolute;
+    left: 60px;
+    top: 12px;
+    cursor: pointer;
+}
+.btnloc {
+    position: absolute;
+    left: 170px;
+    top: 12px;
+    cursor: pointer;
+}
+.btnpro {
+    position: absolute;
+    left: 290px;
+    top: 12px;
+    cursor: pointer;
+}
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.itemlabel  {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 212% */
+    display: flex;
+    align-items: center;
+    /* Color/ Typography/ White */
+    color: #FFFFFF;
+    user-select: none; 
+    -webkit-user-select: none; 
+}
+.titlebar {
+    /*margin-top: 20px;*/
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 25px auto;
+}
+.back {
+    margin-top: 4px;
+    cursor: pointer;
+}
+.title {
+    margin-left: 10px;
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* Color/ Typography/ White */
+    color: #FFFFFF;
+}
+.search {
+    margin-top: 16px;
+}
+
+.itemframe {
+    margin-top: 14px;
+    height: calc(100vh - 180px);
+}
+.item {
+    position: relative;
+    height: 45px;
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    /* identical to box height, or 212% */
+    display: flex;
+    align-items: center;
+    /* Color/ Typography/ White */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+

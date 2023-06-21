@@ -1,0 +1,101 @@
+.result {
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    overflow-y:scroll;
+    scrollbar-width: auto;
+}
+.td_me {
+    text-align: right;
+}
+
+.result::-webkit-scrollbar {
+    background: transparent;
+}
+
+.td_bot {
+    text-align: left;
+}
+.stable {
+    width: 100%;
+}
+.replytext {
+    margin-top: 10px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 16%;
+    color: #B3B5CC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+.saying {
+  margin-top: 10px;
+  background: #393948;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-right: 16%;
+  color: #B3B5CC;
+  font-family: 'Abhaya Libre ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.item_me {
+    margin-top: 10px;
+    background: #5669FF;
+    text-align: right;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 16%;
+    margin-right: 0px;
+    color: #FFFFFF;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.item_bot {
+    margin-top: 10px;
+    background: #393948;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 16%;
+    color: #B3B5CC;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+

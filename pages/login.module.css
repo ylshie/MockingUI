@@ -1,0 +1,179 @@
+.frame  {
+    position: relative;
+    width: 340px;
+    height: 812px;
+    background: #2D2D3A;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 151px;
+    top: 56px;
+}
+.title {
+    left: 19px;
+    top: 168px;
+    position: absolute;
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+
+.input {
+    position: absolute;
+    width: 317px;
+    height: 56px;
+    top: 219px;
+    /*left: 29px;*/
+    left: 10px;
+    background: #393948;
+    /* Color/ Primary/ Blue */
+    border: 1px solid #5669FF;
+    border-radius: 12px;
+}
+.password {
+    position: absolute;
+    width: 317px;
+    height: 56px;
+    /*left: 29px;*/
+    top: 294px;
+    left: 10px;
+    background: #393948;
+    /* Color/ Primary/ Blue */
+    border: 1px solid #5669FF;
+    border-radius: 12px;
+}
+.remember {
+    position: absolute;
+    width: 132px;
+    height: 23px;
+    left: 10px;
+    top: 370px;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 23px;
+    /* identical to box height, or 164% */
+    
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    color: #FFFFFF;
+}
+.forgot {
+    position: absolute;
+    width: 115px;
+    height: 23px;
+    left: 220px;
+    top: 370px;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 23px;
+    /* identical to box height, or 164% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.frame input {
+    background-color: transparent;
+    border: none;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    /* or 164% */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    width: 95%;
+}
+
+.frame input:focus-visible {
+    outline: none; /* -webkit-focus-ring-color auto 1px; */
+}
+
+.divtext {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    width: 85%;
+    height: 100%;
+}
+
+.signin {
+    position: absolute;
+    /*width: 271px;
+    height: 58px;*/
+    /*left: 15px; /*52px;*/
+    left: auto;
+    right: auto;
+    top: 409px;
+    cursor: pointer;
+}
+
+.or {
+    position: absolute;
+    width: 100%; /*21px;*/
+    height: 34px;
+    /*left: 177px;*/
+    /*left: auto;
+    right: auto;*/
+    top: 511px;
+    font-family: 'Abhaya Libre Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+    /* identical to box height, or 212% */
+
+    /*display: flex;
+    align-items: center;*/
+    text-align: center;
+
+    color: #9D9898;
+}
+
+.google {
+    position: absolute;
+    /*width: 273px;
+    height: 56px;
+    left: 19px; 
+    top: 550px; */
+    top: 550px;
+    left: auto;
+    right: auto;   
+    cursor: pointer;
+}
+
+.facebook {
+    position: absolute;
+    /*width: 275px;
+    height: 56px;
+    left: 19px; 
+    top: 623px; */
+    top: 623px;
+    left: auto;
+    right: auto;
+    cursor: pointer;
+}
+

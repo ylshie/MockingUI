@@ -1,0 +1,18 @@
+.action {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+.actioninner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+} 
+.modelinner {
+    width: 100%;
+}
+

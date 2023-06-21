@@ -1,0 +1,22 @@
+
+.orderframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.order {
+    position: relative;
+    color: #5669FF;
+    background-color: #ffffff;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
+
+.menu {
+    width: 100%;
+    object-fit: contain;
+  }

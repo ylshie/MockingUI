@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+}
+
+.text {
+    width: 100%;
+}
+
+.name {
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    .group {
+        grid-template-columns: auto;
+        width: 100%;
+    }
+}
