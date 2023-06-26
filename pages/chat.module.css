@@ -102,6 +102,33 @@
   padding-bottom: 2px;
 }
 
+.clonetab {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  /*
+  color: #D9D9D9;
+  background: #454545ee;
+  border-radius: 17px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  */
+}
+
+.cloneitem {
+  position: relative;
+  width: 100%;
+
+  color: #D9D9D9;
+  background: #454545ee;
+  border-radius: 17px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 .botarea {
   position: absolute;
   bottom: 0px;
@@ -116,10 +143,30 @@
   padding-bottom: 2px;
 }
 
+.testarea {
+  position: absolute;
+  width: 90%;
+
+  color: #D9D9D9;
+  background: #454545ee;
+  /*mix-blend-mode: multiply;*/
+  border-radius: 17px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 .botframe {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.testframe {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  height: 90%;
 }
 
 .userlabel {
@@ -143,7 +190,7 @@
   width: 100%;
   display: grid;
   /*grid-template-columns: calc(100% - 50px) 50px;*/
-  grid-template-columns: auto min-content;
+  grid-template-columns: min-content auto;
   font-weight: bold;
   border: none;
 }
@@ -172,6 +219,44 @@
     width: 300px;
     height: 200px;
     z-index: -10;
+}
+.sidebar {
+    position: relative;
+    /*
+    mix-blend-mode: soft-light;
+    border-radius: 50px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #D9D9D9;
+    */
+    margin-top: 15%;
+    width: 70%;
+    height: 90%;
+}
+.sideback {
+    position: absolute;
+    /*margin: 400px;*/
+    mix-blend-mode: soft-light;
+    border-radius: 50px;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #D9D9D9;
+    top: 5%;
+    width: 70%;
+    height: 90%;
+}
+.itemlist {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+.baritem {
+    width: 90%;
+    font-size: 40px;
+    margin: 20px;
+    color: #d9d9d9;
+    mix-blend-mode: pass-through;
 }
 .player {
   width: 90%;
