@@ -210,14 +210,14 @@ export default function Home({mode, cols, header, cport}) {
                 <div className={styles.threeframe}>
                     <div className={styles.sideback}></div>
                     <div className={styles.sidebar}>
-                        <div className={styles.baritem}>Text to Speach</div>
+                        <div className={styles.bartitle}><img src="icon/tts.svg"/>Text to Speach</div>
                         <hr/>
                         <div className={styles.itemlist}>
                             <div className={styles.baritem} onClick={onTabClone}>
-                                Voice Clone
+                                <img src="icon/rec.svg"/>Voice Clone
                             </div>
                             <div className={styles.baritem} onClick={onTabTest}>
-                                Voice Test
+                                <img src="icon/vc.svg"/>Voice Test
                             </div>
                             <div></div>
                             <div></div>
@@ -231,7 +231,15 @@ export default function Home({mode, cols, header, cport}) {
                     ? <div className={styles.testframe}>
                         <div className={styles.testarea}>
                             <div>
-                                <span>Select speaker:  </span>
+                                <div className={styles.textlabel}>Test cloned voice</div>
+                                <div>
+                                <button onClick={testClone}>Test</button>
+                                <audio ref={refCloner} className={styles.player} controls></audio>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <span>Select voice of the speaker:  </span>
                                 <select onChange={onTargetChanged}>
                                 {
                                 voices.map((voice, index) => <option key={index} value={index}>{voice.name}</option>)
@@ -239,15 +247,9 @@ export default function Home({mode, cols, header, cport}) {
                                 </select>
                             </div>
                             <div>
-                                <span>Input text:  </span>
+                                <span>Input sentence to test:  </span>
                                 <div>
-                                    <textarea value={testmsg} onChange={onMessageChange} rows="10" cols="50"/>
-                                </div>
-                                <div>
-                                <button onClick={testClone}>Test</button>
-                                </div>
-                                <div>
-                                    <audio ref={refCloner} className={styles.player} controls></audio>
+                                    <textarea value={testmsg} onChange={onMessageChange} rows="10" cols="80"/>
                                 </div>
                             </div>
                             {/*}
@@ -263,20 +265,23 @@ export default function Home({mode, cols, header, cport}) {
                     (tab == "clone")
                     ? <div className={styles.clonetab}>
                         <div>
-                            <div className={styles.userlabel}>Add your cloning</div>
+                            <div className={styles.textlabel}>Add your voice</div>
                             <div>
-                            Name: <input type="text" value={name} onChange={onNameChange}/>
                             <button onClick={addClone}>Clone</button>
                             </div>
                         </div>
                         <hr/>
+                        <div className={styles.textlabel}>
+                            Name: <input type="text" value={name} onChange={onNameChange}/>
+                        </div>
+                        <div className={styles.textlabel}>
+                            <input type="radio" id="rec" name="fav_language" value="rec" checked/>
+                            <label for="rec">Record</label>
+                        </div>
                         <div className={styles.cloneitem}>
-                            <div className={styles.userlabel}>Record</div>
-                            <div>
-                            {testtext}
-                            </div>
-                            <div className={styles.userinput}>
-                                {/*<button onClick={playAudio}>Play</button>*/}
+                            <div>{testtext}</div>
+                        </div>
+                        <div className={styles.userinput}>
                                 <div className={styles.micframe}>
                                     <div className={styles.micinner}>
                                         <Mic recordNotify={setRecord}
@@ -288,9 +293,11 @@ export default function Home({mode, cols, header, cport}) {
                                 </div>
                                 <audio ref={refPlayer} className={styles.player} controls></audio>
                             </div>
+                        <div className={styles.textlabel}>
+                            <input type="radio" id="upload" name="fav_language" value="upload"/>
+                            <label for="upload">Upload</label>
                         </div>
-                        <div className={styles.cloneitem}>
-                            <div className={styles.userlabel}>Upload</div>
+                        <div >
                             <input type="file" accept="audio/wav" capture="microphone" onChange={onFileChange}/>
                             <audio ref={refUpload} className={styles.player} controls></audio>   
                         </div>
